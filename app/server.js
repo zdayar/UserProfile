@@ -24,6 +24,7 @@ var PORT = process.env.PORT || 8080;
 // ================================================================================
 
 require("../Server/routes/apiRoutes")(app);
+require("../Server/routes/htmlRoutes")(app);
 
 // =============================================================================
 // LISTENER
