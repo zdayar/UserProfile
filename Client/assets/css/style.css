@@ -7,14 +7,12 @@ body {
     color: #575757;
 }
 
-/* Various classes */
 .profile {
     background: #ffffff;
     width: 728px;
     height: 96px;
     float: left;
     margin-bottom: 4px;
-    /*border: solid 1px;  /* comment this out */
 }
 
 .image-container {
