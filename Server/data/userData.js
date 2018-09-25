@@ -17,7 +17,7 @@ var userArray = [
             gender:"female",
             givenName:"Teresa",
             familyName:"Lewis",
-            imageURL:"/assets/img/female3.png",
+            imageURL:"female3.png",
             userID: "5733a7337e3d61136595a0c9"
         }
     },
@@ -34,7 +34,7 @@ var userArray = [
             gender:"female",
             givenName:"Olivia",
             familyName:"Smith",
-            imageURL:"/assets/img/female3.png",
+            imageURL:"female3.png",
             userID: "8145a7337e3d61136595a0f3"
         }
     },
@@ -51,7 +51,7 @@ var userArray = [
             gender:"male",
             givenName:"Dan",
             familyName:"DuVarney",
-            imageURL:"/assets/img/male3.png",
+            imageURL:"male3.png",
             userID: "7632a7337e3d61136595b6c2"
         }
     },
@@ -68,7 +68,7 @@ var userArray = [
             gender:"female",
             givenName:"Shandra",
             familyName:"Wilkinson",
-            imageURL:"/assets/img/female3.png",
+            imageURL:"female3.png",
             userID: "6745a7337e3d611365953452"
         }
     },
@@ -85,7 +85,7 @@ var userArray = [
             gender:"male",
             givenName:"Bill",
             familyName:"Kiether",
-            imageURL:"/assets/img/male3.png",
+            imageURL:"male3.png",
             userID: "1278a7337e3d61136595eeee"
         }
     }
