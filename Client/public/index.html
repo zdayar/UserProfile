@@ -39,7 +39,8 @@
             userProfiles: []
         },
         created() {
-            fetch('https://cors-anywhere.herokuapp.com/https://quiet-castle-56111.herokuapp.com/api/testUsers')
+            //fetch('https://cors-anywhere.herokuapp.com/https://quiet-castle-56111.herokuapp.com/api/testUsers')
+            fetch('/api/testUsers')
             .then(response => response.json())
             .then(users => {
                 console.log(users);
