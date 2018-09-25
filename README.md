@@ -1,4 +1,4 @@
-# UserProfile
+# UserProfile Coding Assessment
 
 - Description: the requirements for this coding assessment can be found at https://github.com/tmerriweather/assessment
 
@@ -7,13 +7,11 @@
 
 - If you visit the home page (https://quiet-castle-56111.herokuapp.com/), you will see a list of all the users where each user's picture, name and address is displayed in a row, consistent with the style requirements provided. This screen looks like this:
 
-    ![Main screen](ZD_MBA_HD/Users/zdayar/Desktop/UserProfileSS.png?raw=true "Main Screen Shot")
-
-- If you visit the page https://quiet-castle-56111.herokuapp.com/api/testUsers , you will get the JSON for all 5 users defined in the users table, including their address, gender, name, image URL, and unique userID.
+    ![Main screen](UserProfileScreenShot.png?raw=true "Main Screen Shot")
 
 - If you visit the page
-https://quiet-castle-56111.herokuapp.com/api/testUser/<uniqueUserID> ,
-you will get the JSON for the specific user whose userID matches <uniqueUserID>.
+https://quiet-castle-56111.herokuapp.com/api/testUser/`<uniqueUserID`> ,
+you will get the JSON for the specific user whose userID matches `<uniqueUserID`>.
 
 - For example, the output for https://quiet-castle-56111.herokuapp.com/api/testUser/1278a7337e3d61136595eeee is as follows:
 
@@ -43,6 +41,11 @@ you will get the JSON for the specific user whose userID matches <uniqueUserID>.
         6745a7337e3d611365953452
         1278a7337e3d61136595eeee
 
- - The front end uses Vue.js and all that code is in Client/public/index.html, and Client/public/\*.png and Client/public/\*.css
+    More users can be added to this table. In a more complex project, the user records would be stored in some type of database.
 
+- If you visit the page https://quiet-castle-56111.herokuapp.com/api/testUsers , you will get the JSON for all 5 users defined in the users table, including their address, gender, name, image file URL, and unique userID.
+
+ - The front end uses Vue.js and all the front-end code is in Client/public/index.html and Client/public/\*.png, and Client/public/\*.css
+
+ - The back end code is in Server/\* and app/server.js and uses Node.js and Express.
 
