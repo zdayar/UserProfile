@@ -2,11 +2,11 @@
   "name": "UserProfile",
   "version": "1.0.0",
   "description": "Display user profile on web browser and get its JSON via an API call",
-  "main": "server.js",
+  "main": "app/server.js",
   "proxy": "http://localhost:8080/",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node app/server.js"
   },
   "author": "Zeynep Dayar",
   "license": "ISC",
