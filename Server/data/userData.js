@@ -71,6 +71,23 @@ var userArray = [
             imageURL:"/assets/img/female3.png",
             userID: "6745a7337e3d611365953452"
         }
+    },
+    {
+        person:{
+            address:{
+                streetNumber:"104",
+                streetName:"Kingsmill Road",
+                city:"Cary",
+                state:"North Carolina",
+                zip:"27511",
+                unitNumber:null
+            },
+            gender:"male",
+            givenName:"Bill",
+            familyName:"Kiether",
+            imageURL:"/assets/img/male3.png",
+            userID: "1278a7337e3d61136595eeee"
+        }
     }
 ];
 
