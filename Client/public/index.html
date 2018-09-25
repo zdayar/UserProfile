@@ -11,7 +11,7 @@
 <div id="app">
     <div class="profile" v-for="profile in userProfiles">
         <div class="image-container">
-            <img :class="profile.person.gender" :src="'Client/' + profile.person.imageURL">
+            <img :class="profile.person.gender" :src="'Client' + profile.person.imageURL">
         </div>
         <div class="name">
             {{profile.person.givenName}} {{profile.person.familyName}}
