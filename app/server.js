@@ -24,7 +24,6 @@ var PORT = process.env.PORT || 8080;
 // users request data from various URLs.
 // ================================================================================
 require("../Server/routes/apiRoutes")(app);
-require("../Server/routes/htmlRoutes")(app);
 
 // =============================================================================
 // LISTENER
