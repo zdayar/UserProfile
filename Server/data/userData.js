@@ -54,6 +54,23 @@ var userArray = [
             imageURL:"/assets/img/male3.png",
             userID: "7632a7337e3d61136595b6c2"
         }
+    },
+    {
+        person:{
+            address:{
+                streetNumber:"1616",
+                streetName:"Lethbridge Court",
+                city:"Durham",
+                state:"North Carolina",
+                zip:"27702",
+                unitNumber:null
+            },
+            gender:"female",
+            givenName:"Shandra",
+            familyName:"Wilkinson",
+            imageURL:"/assets/img/female3.png",
+            userID: "6745a7337e3d611365953452"
+        }
     }
 ];
 
