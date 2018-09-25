@@ -12,8 +12,8 @@ var path = require("path");
 module.exports = function(app) {
   // HTML GET Requests
 
-  // default to home
-  app.get("/", function(req, res) {
-    res.sendFile(path.join(__dirname, "../../Client/public/index.html"));
-  });
+  // default GET / routes to index.html
+  //app.get("/", function(req, res) {
+  //  res.sendFile(path.join(__dirname, "../../Client/public/index.html"));
+  //});
 };

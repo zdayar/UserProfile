@@ -1,7 +1,7 @@
 {
   "name": "UserProfile",
   "version": "1.0.0",
-  "description": "Display user profile on web browser and get its JSON via an API call",
+  "description": "Display user profiles browser and get their JSON via API calls",
   "main": "app/server.js",
   "proxy": "http://localhost:8080/",
   "scripts": {

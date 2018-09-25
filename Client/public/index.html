@@ -9,6 +9,9 @@
 <body>
 
 <div id="app">
+    <!-- loop through all user profiles and display the picture,
+         name, and address for each on the screen - the style sheet
+         included above takes care of the styling/colors/dimensions -->
     <div class="profile" v-for="profile in userProfiles">
         <div class="image-container">
             <img :class="profile.person.gender" :src="profile.person.imageURL">
@@ -21,8 +24,8 @@
                 {{profile.person.address.streetNumber}}
                 {{profile.person.address.streetName}}
                 <span v-if="profile.person.address.unitNumber !== null">
-                #{{profile.person.address.unitNumber}}
-            </span>
+                    #{{profile.person.address.unitNumber}}
+                </span>
             </div>
             <div class="city-state">{{profile.person.address.city}}, {{profile.person.address.state}}</div>
             <div class="zip">{{profile.person.address.zip}}</div>
@@ -33,12 +36,16 @@
 
 <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 <script>
+    // create an instance of Vue with user profiles as the data
+    // and the "app" div as the target
     const app = new Vue({
         el: '#app',
         data: {
             userProfiles: []
         },
         created() {
+            // call the api to GET all users in an array
+            // and assign it to the userProfiles data field
             fetch('/api/testUsers')
             .then(response => response.json())
             .then(users => {
@@ -50,7 +57,6 @@
             })
         }
     });
-
 </script>
 
 
