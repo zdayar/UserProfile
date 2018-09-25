@@ -1,0 +1,56 @@
+/* Common elements */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial';
+    color: #575757;
+}
+
+/* Various classes */
+.profile {
+    background: #ffffff;
+    width: 728px;
+    height: 96px;
+    float: left;
+    margin-bottom: 4px;
+    /*border: solid 1px;  /* comment this out */
+}
+
+.image-container {
+    float: left;
+    padding-right: 10px;
+    display: inline-block;
+}
+
+img {
+    height: 96px;
+    width: 96px;
+    border: solid 4px;
+}
+
+.female {
+    border-color: #EE4494;
+}
+
+.male {
+    border-color: #37D5FE;
+}
+
+.name {
+    float: left;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 36px;
+    padding: 30px 0;
+}
+
+.address {
+    float: right;
+    display: inline-block;
+    font-size: 18px;
+    text-align: center;
+    padding: 23px 19px;
+}
+

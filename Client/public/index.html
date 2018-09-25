@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<div id="app">
+    <div class="profile" v-for="profile in userProfiles">
+        <div class="image-container">
+            <img :class="profile.person.gender" :src="'../' + profile.person.imageURL">
+        </div>
+        <div class="name">
+            {{profile.person.givenName}} {{profile.person.familyName}}
+        </div>
+        <div class="address">
+            <div class="street">
+                {{profile.person.address.streetNumber}}
+                {{profile.person.address.streetName}}
+                <span v-if="profile.person.address.unitNumber !== null">
+                #{{profile.person.address.unitNumber}}
+            </span>
+            </div>
+            <div class="city-state">{{profile.person.address.city}}, {{profile.person.address.state}}</div>
+            <div class="zip">{{profile.person.address.zip}}</div>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script>
+    const app = new Vue({
+        el: '#app',
+        data: {
+            userProfiles: []
+        },
+        created() {
+            fetch('https://cors-anywhere.herokuapp.com/https://quiet-castle-56111.herokuapp.com/api/testUsers')
+            .then(response => response.json())
+            .then(users => {
+                console.log(users);
+                this.userProfiles = users;
+            })
+            .catch(error => {
+                console.log(error);
+            })
+        }
+    });
+
+</script>
+
+
+</body>
+</html>
